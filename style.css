@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#bukaspa {
+    align-content: center;
+    margin-top: 12%;
+}
+#container {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    box-shadow: 8px 8px 12px lightgray;
+}
+.needs-validation {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+hr {
+    margin-top: 10%;
+}
+
