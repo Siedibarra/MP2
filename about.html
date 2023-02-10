@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adventour</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+
     <!--BS 5 CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--End of BS 5 CDN-->
     
     <!--CSS-->
     <link rel="stylesheet" href="style2.css">
-    
     <!--End of CSS-->
 
 </head>
@@ -21,7 +23,7 @@
 
     <nav>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary"  style="width: 100vw;">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary"  style="width: ;">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,13 +74,15 @@
             <div class="row">
 
                 <!--==================== Left Section =================-->
-                    <div class="left col-12 col-md-0 col-lg-3 col-xl-2 col-xxl-2">
+                
+
+                    <div class="left col-1 col-sm-0 col-md-1 col-lg-3 col-xl-2 col-xxl-2">
+                        
                         <div class="side-menu-toggle">
                             <div class="hamburger">
                                 <span></span>
                             </div>
                         </div> 
-
 
                         <aside class="sidenav" id="leftnav">
 
@@ -204,720 +208,429 @@
                 <!--==================== End of Left Section =================-->
 
                 <!--==================== Middle Section =================-->
-                    <div class="middle col-12 col-md-9 col-lg-7 col-xl-8 col-xxl-8">
+                    <div class="middle col-12 col-md-11 col-lg-9 col-xl-10 col-xxl-10">
                         
-                        <div class="feedcage container mb-5">
+                        <div class="carousel-container">
+                            <div class="carousel-tuyok">
+
+                                <div id="carouselExampleCaptions" class="carousel slide" style="width: 100%;" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                    <div class="carousel-item active bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.014),rgba(0, 0, 0, 0.041),rgba(0, 0, 0, 0.178)), url(images/davaowelcomebanner1.png);" data-bs-interval="5000">
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.055),rgba(0, 0, 0, 0.719),rgb(0, 0, 0)), url(images/kadayawan.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content d-flex text-start align-items-center" id="carcontent2">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">Learn the culture and diversity of the</h4>
+                                                    <h3 class="display-4 text-white fw-bold"> King City of the <span style="color: var(--color-adventour); font-weight: bold;">South</span></h3>
+                                                    <a href="home.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">Learn about Davao City's history</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(images/ppark.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content text-end" id="carcontent3">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">Discover and start your journey into the heart of </h6>
+                                                    <h2 class="display-4 text-white fw-bold">Davao <span style="color: var(--color-adventour); font-weight: bold;">City</span></h2>
+                                                    <a href="maps.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">Explore, Unwind, Adventure</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.055),rgba(0, 0, 0, 0.671),rgb(0, 0, 0)), url(images/sanped.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content text-start" id="carcontent4">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">Feeling Lost? Reach out to </h6>
+                                                    <h2 class="display-4 text-white fw-bold">Fellow <i>Adven</i><span style="color: var(--color-adventour); font-weight: bold;"><i>tourers</i></span></h2>
+                                                    <a href="newsfeed.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">See Newsfeed</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(images/hiking.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content text-end" id="carcontent8">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h5 class="text-white fw-bold">Emergency first aid kits and survival tools?  </h6>
+                                                    <h4 class="display-4 text-white fw-bold">Visit <i>Adven</i><span style="color: var(--color-adventour); font-weight: bold;"><i>store</i></span> </h4>
+                                                    <a href="shop.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">Shop Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(images/digong.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content" id="carcontent5">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">Be versatile and efficient in </h6>
+                                                    <h2 class="display-4 text-white fw-bold"> Every<span style="color: var(--color-adventour); font-weight: bold;"> Situation</span></h2>
+                                                    <a href="utilities.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">See Utilities</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.007),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(images/baha.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content text-end" id="carcontent6">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">Above everything </h6>
+                                                    <h2 class="display-4 text-white fw-bold"> We value <span style="color: var(--color-adventour); font-weight: bold;"> Life</span> the most</h2>
+                                                    <a href="community.html" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2"> Learn about the hazard zones within Davao City</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item bg-cover" style="background: linear-gradient(rgba(1, 1, 27, 0.11),rgba(0, 0, 0, 0.671),rgba(0, 0, 0, 0.925)), url(images/bata.jpg)" data-bs-interval="5000">
+                                        <div class="carousel-content" id="carcontent7">
+                                            <div class="row">
+                                                <div class="col-12">  
+                                                    <h4 class="text-white fw-bold">More fun awaits for you in the </h6>
+                                                    <h2 class="display-4 text-white fw-bold">Crown Jewel of<span style="color: var(--color-adventour); font-weight: bold;"> Mindanao</span></h2>
+                                                    <a href="home.php" class="btn btn-carousel btn-sm fw-bold mt-2 mb-2">Learn More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    </div>
+                                    
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+    
+                            </div>
+                            
+                        </div>
+
+                        <div class="feedcage container mb-1">
 
                             <div class="feeds">
                                 
-                                <div class="feed">
-                                    <div class="main-photo-banner">
-                                        <div class="container" id="banner-image">
-                                            <img src="./images/davaowelcomebanner1.png" alt="Welcome to Davao City!">
+
+                                    <!--Hero-->
+
+                                    <div id="sectioninfo">
+                                        <div class="container">
+                                                <div class="row align-items-center justify-content-center">
+                                                    <div class="col-lg-8 col-xl-8 col-md-8 col-xxl-6">
+                                                        <div class="row">
+                                                            <div class="col-12 info-box">
+                                                                <h2 class="text-center fw-bold mb-2 display-5">Welcome to <i>Adven</i><span style="color: var(--color-adventour); font-weight: bold;"><i>tour</i></span></h2>
+                                                                <p class="lead text-muted text-center mb-4">"Explore and get lost in paradise within the durian capital of the Philippines"</p>
+                                                                <div class="d-grid gap-3 mb-3 d-sm-flex justify-content-center">
+                                                                    <a class="btn btn-outline-success btn-large btn-sm text-uppercase" href="#about"> Learn, Explore, Discover
+                                                                        <span class="material-icons-outlined ms-2">help_outline</span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="info-box-image col-lg-4 col-xl-3 col-xxl-3 col-md-4 mb-1 justify-content-center">
+                                                        <img src="./images/Logo1-122722.png">
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div class="feed">
+                                    <!--End Hero -->
+
+                                <hr>
+
                                     
-                                    <div class="head">
-                                        <div class="user">
-                                            <div class="profile-photo">
-                                                <img src="./images/Logo1-122722.png">
+                                    <!--About-->
+                                    <div id="about" class="text-center">
+                                            <div class="container py-5">
+                                                <div class="row justify-content-center">
+                                                    <h1 class="fw-bold mb-3"> <i>Adven<span style="color: var(--color-adventour); font-weight: bold;">tour</span></i></h1>
+                                                    <!--<p class="lead text-muted mb-2">We intended to connect and engage the residents and the visitors to explore, learn and discover the natural beauty, 
+                                                        culture, and diversity of the people of Davao City.-->
+                                                    </p>
+
+                                                    <p class="lead text-muted mb-5">
+                                                        This platform aims to disseminate important information readily available to the public through the innovation of the online technology and 
+                                                        for everyone to become a responsible and well prepared citizens of the King City of the South in times of need.
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div class="user-info">
-                                                <h3> Everything About Davao City</h3>
-                                                <h5>Adventour</h5>
-                                                <small>Davao City, December 26, 2022</small>
+                                            <div class="container mb-5">
+                                                <div class="row">
+                                                    <div class="col-lg-4 mx-auto mb-5">
+                                                        <div class="d-flex mb-5 about">
+                                                            <span class="material-icons-outlined m-auto" style="color: var(--color-adventour);">sports_kabaddi</span>
+                                                        </div>
+                                                        <h2>Mission</h2>
+                                                        <p class="text-muted mb-0">Our mission is to connect and engage the residents and visitors of Davao City, no matter the age, gender, 
+                                                            ethnicity, beliefs, culture, diversity, politics, and principles.
+                                                        </p>            
+                                                        <br>
+                                                        <p class="text-muted mb-0">To provide every important information needed in this platform, we aim to inform, provide, prepare, 
+                                                            and educate everyone about disaster mitigation, risk location, survivability and disaster preparedness. 
+                                                        </p>          
+                                                    </div>
+                                                    <div class="col-lg-4 mx-auto mb-5">
+                                                        <div class="d-flex mb-5 about">
+                                                            <span class="material-icons-outlined m-auto" style="color: var(--color-adventour);">query_stats</span>
+                                                        </div>
+                                                        <h2>Vision</h2>
+                                                        <p class="text-muted mb-0">We envision a world where the residents of Davao City are connected together and is well equiped with knowledge and prepared for any calamity that might struck the region, minimizing the damages and casualties that might help and improve the efficiency of search and rescue missions of NDRRMC. </p>
+                                                        <br>
+                                                        <p class="text-muted mb-0"> We aim to provide the city with timely updates, and whereabouts of the victims of calamities through the location of their recent posts on the platform and their social media, and to provide general information to the public about the risk and safe zones within the city and the location of evacuation areas close to their vicinity. </p>                
+                                                    </div>
+                                                    <div class="col-lg-4 mx-auto mb-5">
+                                                        <div class="d-flex mb-5 about">
+                                                            <span class="material-icons-outlined m-auto" style="color: var(--color-adventour);">sports_score</span>
+                                                        </div>
+                                                        <h2>Goal</h2>
+                                                        <p class="text-muted mb-0">With the advancement of the technology and innovation, <i><b>Adven</b></i><span style="color: var(--color-adventour);"><b><i>tour</i></b></span> aim's to educate tourists, families, and the entire community, and bringing everyone closer together, keeping everyone engaged to interact, explore, and discover the hidden beauty of the Crown Jewel of the South in Mindanao</p>                      
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            
+                                    </div>
+                                    <!--End About-->
+
+                                <hr>
+
+                                    <!--Courses-->
+                                <div id="courses" class="py-5 align-items-center justify-content-center">
+                                    <div class="container text-center align-items-center py-5">
+                                        <div class="row justify-content-center">
+                                            <h2 class="fw-bold">About the Deve<span style="color: var(--color-adventour)">lopers</span></h2>
+                                            <p class="lead text-muted mb-5">Meet the bright minds behind this platform reponsible for the idea and making this amazing website</p>
                                         </div>
                                     </div>
-        
-                                    <div class="map-photo">
-                                        <div class="container" id="map-main-photo">
-                                            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1A3inty7sxqEvf_GpowuyjGiaf-JV2Yk&ehbc=2E312F" width="100%" height="100%"></iframe>
+                                    <div class="container text-center mb-5">
+                                            
+                                        <div class="col-12 ">
+
+                                            <div class="row d-flex align-items-center">
+
+                                                <div class="dev-image-container col-12 col-sm-12 col-md-5">
+                                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                          <div class="carousel-item active">
+                                                            <img src="./images/bata.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="./images/baha.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="./images/hiking.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+    
+                                                <div class="dev-info col-12 col-sm-12 col-md-7">
+                                                    <h3 class="text-muted text-start">Jimmy D. <span style="color: var(--color-adventour);">Ortiz</span> III, RMT</h3>
+                                                    <hr>
+                                                    <p class="lead text-muted">
+                                                        "A boy from Barangay 21-C, who grew up in the slums of Boulevard, Downtown, Davao City, Now living his life to the fullest 
+                                                        with a dream for his beloved city and country."
+                                                    </p>
+
+                                                    <p class="text-muted text-start">
+                                                        Jimmy is a graduate of Bachelor of Medical Laboratory Science from the Davao Doctor's College, and passed the Board Exams last September 2018. 
+                                                        Since then, He worked on his profession and became a Medical Technologist on duty at Surelab Diagnostic Center, Davao City last 2018 up to 2019 and a Clinical Instructor at the 
+                                                        Davao Doctor's College last 2019 - 2020. 
+                                                    </p>
+
+                                                    <p class="text-muted text-start">
+                                                        He also served as a Covid-19 Swabber and Responder during the height of the pandemic starting from 2022 up to 2021, and been reassigned to Los Amigos 
+                                                        Molecular Laboratory as a Molecular Laboratory Analyst starting 2021 up to present day.
+                                                    </p>
+
+                                                    <p class="text-muted text-start">
+                                                        He dreams of uniting the people of land of promise as one, despite the differences in <span class="fw-bold">ethnicity, gender, race, beliefs, perspective, 
+                                                        ages, status, and diversity</span>. 
+                                                        Each and everyone shares the same gene and are brothers and sisters in God's eye.
+                                                    </p>
+
+                                                    <h5 class="fw-bold text-muted text-start">
+                                                       <i> "If there is no more pig under your house, nothing will eat the scum that sticked on your walls"</i>
+                                                    </h5>
+                                                </div>
+    
+
+                                            </div>
+
                                         </div>
-                                    </div>
-        
-                                    <div class="action-button">
-                                        
-                                        <div class="interaction-button">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                                                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-                                                </svg>
-                                            </span>
 
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                                                </svg>
-                                            </span>
+                                        <div class="col-12">
 
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
-                                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                                                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
-                                                </svg>
-                                            </span>
+                                            <br>
+                                            <br>
+                                            <br>
 
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                                </svg>
-                                            </span>
+                                            <div class="row d-flex align-items-center">
+    
+                                                <div class="dev-info col-12 col-sm-12 col-md-7">
+                                                    <h3 class="text-muted text-end">Sied Jeremiah C. <span style="color: var(--color-adventour);">Ibarra</span>, RMT</h3>
+                                                    <hr>
+                                                    <p class="lead text-muted">
+                                                        "A boy from Tagum City, who grew in Kabacan, North Cotabato, Now living his life to the fullest with a dream for 
+                                                        his beloved city and country."
+                                                    </p>
+
+                                                    <p class="text-muted text-end">
+                                                        Sied is a graduate of Bachelor of Medical Laboratory Science from the University of the Immaculate Concepcion, and passed the Board Exams last August 2017. 
+                                                        Since then, He worked on his profession and became a Clinical Instructor at the University of the Immaculate Conception last 2017 up to 2019 and at the 
+                                                        Davao Doctor's College last 2019 - 2020. 
+                                                    </p>
+
+                                                    <p class="text-muted text-end">
+                                                        He also served as a Covid-19 Swabber and Responder during the height of the pandemic starting from 2022 up to 2021, and been reassigned to Los Amigos 
+                                                        Molecular Laboratory as a Molecular Laboratory Analyst starting 2021 up to present day.
+                                                    </p>
+
+                                                    <p class="text-muted text-end">
+                                                        He dreams of uniting the people of land of promise as one, despite the differences in <span class="fw-bold">ethnicity, gender, race, beliefs, perspective, 
+                                                        ages, status, and diversity</span>. 
+                                                        Each and everyone shares the same gene and are brothers and sisters in God's eye.
+                                                    </p>
+
+                                                    <h5 class="fw-bold text-muted text-end">
+                                                       <i> "Time is gold when watching bold."</i>
+                                                    </h5>
+                                                </div>
+    
+                                                <div class="dev-image-container col-12 col-sm-12 col-md-5">
+                                                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                          <div class="carousel-item active">
+                                                            <img src="./images/durian.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="./images/ethnicity1.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                          <div class="carousel-item">
+                                                            <img src="./images/ppark.jpg" class="d-block w-100" alt="...">
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                </div>
+
+                                            </div>
+
                                         </div>
-        
-                                        <div class="bookmark">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="caption">
-                                        <p class="text-dark"><b style="color: var(--color-adventour);">Davao City</b>, officially the City of Davao (Cebuano: Dakbayan sa Dabaw; Filipino: Lungsod ng Davao), 
-                                            is a 1st class highly urbanized city in the Davao Region, Philippines. The city has a total land area of 2,443.61 km2 (943.48 sq mi), 
-                                            making it the largest city in the Philippines in terms of land area.
-                                        </p>
 
-                                        <p>
-                                            It is the third-most populous city in the Philippines after Quezon City and Manila, and the most populous in Mindanao.
-                                             According to the 2020 census, it has a population of 1,776,949 people.
-                                        </p>
-
-                                        <p>
-                                            It is geographically situated in the province of Davao del Sur and grouped under the province by the Philippine Statistics Authority, but the city is governed 
-                                            and administered independently from it. The city is divided into three congressional districts, which are subdivided into 11 administrative districts with a total of 182 barangays.
-                                        </p>
-
-                                        <p>
-                                            Davao City is the center of Metro Davao, the second most populous metropolitan area in the Philippines. 
-                                            The city serves as the main trade, commerce, and industry hub of Mindanao, and the regional center of Davao Region. 
-                                            Davao is home to Mount Apo, the highest mountain in the Philippines. The city is also nicknamed the <b style="color: var(--color-adventour);">"Durian Capital of the Philippines"</b>.
-                                        </p>
                                         <br>
+                                        <br>
+                                        <br>
+                                        <br>    
 
-                                        <h5 style="color: var(--color-adventour);">Where does the name "Davao" came from?</h5>
+                                        <div class="col-12">
 
-                                        <p>
-                                            The region's name is derived from its Bagobo origins. The Bagobos were indigenous to the Philippines. 
-                                            The word davao came from the phonetic blending of three Bagobo subgroups' names for the Davao River, 
-                                            a major waterway emptying into the Davao Gulf near the city.
-                                        </p>
+                                            <div class="dev-image-container">
+                                                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                                                    <div class="carousel-inner">
+                                                      <div class="carousel-item active">
+                                                        <img src="./images/hiking.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="./images/roxas.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                      <div class="carousel-item">
+                                                        <img src="./images/sanpedro1.jpg" class="d-block w-100" alt="...">
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </div>
 
-                                        <p>
-                                            The aboriginal Obos, who inhabit the hinterlands of the region, called the river Davah (with a gentle vowel ending, 
-                                            although later pronunciation is with a hard v or b); the Clatta (or Giangan/Diangan) called it Dawaw, and the Tagabawas called it Dabo. 
-                                            To the Obos, davah also means "a place beyond the high grounds" (alluding to settlements at the mouth of the river surrounded by high, rolling hills).
-                                        </p>
+                                            <br>
+                                            <br>
+
+                                            <div class="dev-info">
+                                                
+                                                <h4 class="text-muted">
+                                                    <i>"Tough times don't last when you live for the moments you can't put into words."</i>
+                                                </h4>
+
+                                                <p class="text-muted">
+                                                    Sticks in a bundle is quite unbreakable. The same is true to both Jimmy and Sied. They have been buddies 
+                                                    since 2014 along with their sqaud, sharing the same pains,sufferings and sucess of college life. 
+                                                </p>
+
+                                                <p class="text-muted">
+                                                    With nothing else to loose and only have each other's back, Sied and Jimmy's squad were founded at the 
+                                                    UIC Bankerohan Campus. Having different set of goals, dreams, classrooms, and class schedules, they still 
+                                                    manage to create an unbreakable bond, unique from the other friends they have.
+                                                </p>
+
+                                                <p class="text-muted">
+                                                    Under the same school, they shared each other's secret, achievements, and goals. Now, time flies fast, everyone are starting 
+                                                    their own family, but for Jimmy and Sied, Life is only beginning to unfold on their very eyes.
+                                                </p>
+
+                                                <p class="text-muted">
+                                                    They dreamt of having a happier and safer city for their children to live in, and also for the next generations to come. 
+                                                    They wanted to make every important information available to the public and catch up with the extremely fast changes of the seasons and of the innovation
+                                                    of the technology.
+                                                </p>
+
+                                                <p class="text-muted">
+                                                    With this platform, they aim to engage the masses in a positive revolution towards a better future for their country and city.
+                                                </p>
+
+                                            </div>
+                                        </div>
 
                                         <br>
-
-                                        <span class="fw-bold"> #DavaoCity<br>#LifeisHere</span>
-                                    </div>
-        
-                                </div>
-
-                                <div class="feed">
-                                    
-                                    <div class="head">
-                                        <div class="user">
-                                            <div class="profile-photo">
-                                                <img src="./images/Logo1-122722.png">
-                                            </div>
-                                            <div class="user-info">
-                                                <h3> Davao City through the eras</h3>
-                                                <h5>Adventour</h5>
-                                                <small>Davao City, December 26, 2022</small>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="main-photo">
-                                        <div class="container" id="main-photo">
-                                            <img src="./images/davaohistory1.jpg" alt="Davao City Sangunian">
-                                        </div>
-                                    </div>
-        
-                                    <div class="action-button">
-                                        
-                                        <div class="interaction-button">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                                                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
-                                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                                                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                        <div class="bookmark">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="caption">
-                                        <h5 style="color: var(--color-adventour); font-weight: bold;">History</h5>
                                         <hr>
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Precolonial era</h6>
-                                        <p>
-                                            The area of what is now Davao City was once a lush forest inhabited by Lumadic peoples such as the Bagobos
-                                            and Matigsalugs, alongside other ethnic groups such as the Aeta, Maguindanaon and the Tausug.
-                                        </p>
 
-                                        <p>
-                                            Davao River was then called Tagloc River by the Bagobos, Maguindanaons and 
-                                            Tausugs who then inhabited a settlement near the mouth of the river to the sea around what is now 
-                                            Bolton Riverside due immediately southwest of the city plaza.
-                                        </p>
+                                        <div class="row mt-5">
 
-                                        <p>
-                                            In 1543, Spanish explorers on sailing ships led by Ruy Lopez de Villalobos deliberately 
-                                            avoided the area around Davao Gulf, then called Gulf of Tagloc, due to the danger posed by fleets of 
-                                            Moro warships operating in the area while surveying the southeastern coast of Mindanao for possible colonization, 
-                                            sand as a result the Davao Gulf area remained virtually untouched by European explorers for the next three centuries.
-                                        </p>
+                                            <div class="container-image col-12 col-md-5">
+                                                <div class="dev-bottom-image">
+                                                    <div class="img-wrapper">
+                                                        <img src="./images/devimgbottom1.jpg" alt="Devs">
+                                                        <div class="overlay">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Maguindanao era</h6>
-                                        <p>
-                                            A Maguindanaon Datu under the name Datu Bago was rewarded the territory of the surroundings of Davao Gulf 
-                                            by the Sultan of Maguindanao Sultanate for joining the campaign against the Spanish in the late 1700s. 
-                                            From his ancestral home in Maguindanao, he moved to the area in 1800 and, having convinced Bagobos and 
-                                            other native groups in the area to his side, conquered the entire Davao Gulf area.
-                                        </p>
-
-                                        <p>
-                                            Having consolidated his position, he founded the fortress of Pinagurasan in what is now the site of 
-                                            Bangkerohan Public Market in 1830 which served as his capital. From being a fortification and base of 
-                                            operations from which Datu Bago could gather and rally his forces, the settlement of Pinagurasan eventually 
-                                            grew into a small city extending from present-day Generoso Bridge in Bangkerohan to Quezon Boulevard more 
-                                            than a kilometer down south, as Maguindanaons and Bagobos alike among other nearby tribes in the area flocked 
-                                            into the settlement, eventually becoming the main trade entrepot in the Davao Gulf area.
-                                        </p>
-
-                                        <p>
-                                            With his immense overlordship of the Davao Gulf, Datu Bago was eventually crowned Sultan by his subjects 
-                                            at his capital Pinagurasan in 1843, effectively making his realm virtually independent from the Sultanate of 
-                                            Maguindanao and is now itself a Sultanate that lords over the Davao Gulf, now in equal standing with the Mindanaon 
-                                            Muslim kingdoms of Maguindanao and Sulu.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Spanish era</h6>
-
-                                        <p>
-                                            Although the Spaniards began to explore the Davao Gulf area as early as the 16th century, Spanish influence was 
-                                            negligible in the Davao region until 1842, when the Spanish Governor General of the Philippines Narciso Clavería 
-                                            ordered the colonization of the Davao Gulf region, including what is now Davao City, for the Spanish Crown.
-                                        </p>
-
-                                        <p>
-                                            This came after the loss of their colonies in the Americas from 1820s to 1830s which gravely reduced their 
-                                            sources of revenue to the point that the royal government in Madrid could no longer continue to properly provide 
-                                            financial support to what remained of its worldwide colonies. Thus, it became more urgent for local officials in 
-                                            the colonies, including the Philippines, to find ways and means of expanding the revenues in running the colonies, 
-                                            primarily in terms of tribute extracted from the natives. It meant that for the first time, the Spanish colonial 
-                                            government in the Philippines was compelled to embark on a full-scale conquest of Mindanao in the hopes of 
-                                            increasing its coffers.
-                                        </p>
-
-                                        <p>
-                                            Davao Gulf seemed to be a tempting target among Spanish military circles based in Manila for its thriving 
-                                            maritime trade taking place there. Their initial forays began with their incursion on the village of 
-                                            Sigaboy in 1842, from which the local Spanish officials who recently landed there immediately demanded heavy 
-                                            tribute on the natives who then asked for Datu Bago's help in expelling the Spaniards, which he responded 
-                                            swiftly by sending a combined naval and land force in the area to defeat and drive out the Spanish force there.
-                                        </p>
-
-                                        <p>
-                                            The Spanish, whom they saw Datu Bago as a mere pirate and brigand, didn't take the threat seriously for years 
-                                            despite the numerous defeats they have suffered under his hands until the burning of the Spanish trading vessel 
-                                            San Rufo, which carried a letter of friendship from Sultan Iskandar Qudaratullah Muhammad Zamal al-Azam of Maguindanao 
-                                            to Governor General Claveria, and its massacre of all its crew by seaborne corsairs under orders from Datu Bago 
-                                            himself in 1846.
-                                        </p>
-
-                                        <p>
-                                            Incensed with the incident, the Spanish secured the consent from the Sultan of Maguindanao who finally disowned 
-                                            the Moros of the Davao Gulf by using the incident as pretext for justification to conquer the area, thus official 
-                                            Spanish colonization of Davao Gulf finally began in earnest in April 1848 when an expedition of 70 men and women 
-                                            led by José Cruz de Uyanguren of Vergara, Spain, landed on the estuary of the Davao River the same month, 
-                                            intent on conquering Pinagurasan, the capital of Datu Bago's domain, in the hopes of permanently ending the menace 
-                                            posed on Spanish vessels by Moro raiders in the Davao Gulf.
-                                        </p>
-
-                                        <p>
-                                            Being the strongest chieftain in the region, Datu Bago imposed heavy tribute on the Mandaya tribes nearby, therefore 
-                                            also making him the most loathed chieftain in the region. Cruz de Uyanguren has orders from the higher authorities 
-                                            in Manila to colonize the Davao Gulf region, which included the Bagobo settlement on the northern riverbank; in return, 
-                                            he asked for the position of the governor of the conquered area and granted the monopoly of its commerce for ten years. 
-                                            At this juncture, a Mandaya chieftain named Datu Daupan, who then ruled Samal Island, came to him, seeking for an 
-                                            alliance against Datu Bago.
-                                        </p>
-
-                                        <p>
-                                            The two chieftains were archrivals, and Cruz de Uyanguren took advantage of it, initiating an alliance between Spain 
-                                            and the Mandayas of Samal Island. Intent on taking the settlement for Spain, he and his men accordingly assaulted it, 
-                                            but the Bagobo natives fiercely resisted the attacks, which resulted in his Samal Mandaya allies to retreat and not 
-                                            fight again. Thus, a three-month long inconclusive battle for the possession of the settlement ensued which was only 
-                                            decided when an infantry company which sailed its way by warships from Zamboanga came in as reinforcements, thus ensuring 
-                                            the takeover of the settlement and its surroundings by the Spaniards while the defeated Bagobos fled further inland 
-                                            while Datu Bago and his followers fled north to Hijo where he would die two years later.
-                                        </p>
-
-                                        <p>
-                                            After Cruz de Oyanguren defeated Bago and conquered Pinagurasan, he founded the town of Nueva Vergara, the future Davao, 
-                                            in the mangrove swamps of what is now Bolton Riverside on June 29, 1848, in honor of his home in Spain and becoming its 
-                                            first governor. Pinagurasan was then incorporated into the new town. Almost two years later on February 29, 1850, the 
-                                            province of Nueva Guipúzcoa was established via a royal decree, with the newly founded town as the capital, once again 
-                                            to honor his homeland in Spain. When he was the governor of the province, however, his plans of fostering a positive 
-                                            economic sway on the region backfired, which resulted in his eventual replacement under orders of the colonial government.
-                                        </p>
-
-                                        <p>
-                                            The Spanish control of the town was unstable at best, as its Lumad and Moro natives routinely resisted the attempts of 
-                                            the Spanish authorities to forcibly resettle them and convert them into Christians. Despite all these, however, such 
-                                            were all done in the goal of making the governance of the area easier, dividing the Christians both settlers and native 
-                                            converts and the Muslim Moros into several religion-based communities within the town.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">During the Philippine Revolution</h6>
-
-                                        <p>
-                                            As the Philippine Revolution, having been fought for two years, neared its end in 1898, the expected departure of the 
-                                            Spanish authorities in Davao became apparent—although they took no part in the war at all, for there were no revolutionary 
-                                            figures in the vicinity save a negligible pro-Filipino separatist rebel movement in the town of Santa Cruz in the south. 
-                                            When the war finally ended, as the Spanish authorities finally left the town, two Davaoeño locals by the names of Pedro Layog 
-                                            and Jose M. Lerma represented the town and the region at the Malolos Congress of 1898, therefore indicating Davao as a part of 
-                                            the nascent First Philippine Republic.
-                                        </p>
-
-                                        <br>
-
-                                        <p>
-                                            The period of Filipino revolutionary control of Davao did not last long, however, as the Americans landed at the town later the same year. 
-                                            There was no record of locals offering any sort of resistance to the Americans.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">American Period</h6>
-
-                                        <p>
-                                            As the Americans began their administration of the town in 1900, economic opportunities quickly arose as huge swathes of its 
-                                            areas, mainly lush forests and fertile grasslands, were declared open for agricultural investment. A result of this, foreign 
-                                            businessmen especially Japanese entrepreneurs started settling the region, staking their claims on the vast lands of Davao and 
-                                            turned them into huge plantations of coconut and banana products.
-                                        </p>
-
-                                        <p>
-                                            In just a short period, Davao changed from a small and sparsely-inhabited town into a bustling economic center serving mainly 
-                                            the Davao Gulf region, heavily populated alongside natives by tens of thousands of settlers and economic migrants from Luzon, 
-                                            Visayas and Japan. All of this led the Port of Davao to be established and opened the same year, in order to facilitate the 
-                                            international export of agricultural products from Davao.
-                                        </p>
-
-                                        <p>
-                                            Because of the rapidly increasing progress of the town, on March 16, 1936, congressman Romualdo Quimpo from Davao filed Bill 609 
-                                            (passed as Commonwealth Act 51), creating the City of Davao from the town of Davao and the municipal district of Guianga. 
-                                            The bill called for the appointment of local officials by the president. By that time, the new city was already mostly populated 
-                                            with Japanese businessmen and settlers who then became its locals. Davao was inaugurated as a charter city on October 16, 1936, 
-                                            by President Manuel L. Quezon the charter came into effect on March 1, 1937. It was one of the first two towns in Mindanao to 
-                                            be converted into a city, the other being Zamboanga.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Davao during World War II</h6>
-
-                                        <p>
-                                            On December 8, 1941, Japanese planes bombed the harbor, and from December 20 they landed forces and began an occupation of the 
-                                            city which lasted to 1945. Davao was among the earliest to be occupied by Japanese forces, and the city was immediately fortified 
-                                            as a bastion of Japanese defense.
-                                        </p>
-
-                                        <p>
-                                            The city was subjected to extensive bombing by forces led by Douglas MacArthur before American forces landed in Leyte in October 1944. 
-                                            The Battle of Davao towards the end of World War II was one of the longest and bloodiest battles during the Philippine Liberation, 
-                                            and brought tremendous destruction to the city, setting back the economic and physical strides made before the Japanese occupation.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Post War Growth</h6>
-
-                                        <p>
-                                            Davao regained its status as the agricultural and economic hub of Mindanao after the war ended in 1945. Wood products such as 
-                                            plywood and timber, and More agricultural products being produced within the city, such as copra and other varieties of banana, 
-                                            became available for export. Some Japanese locals—80% percent of the city's population prior to the war's end—assimilated with 
-                                            the Filipino population, while others were expelled from the country by the Filipino locals, due to recent enmity.
-                                        </p>
-
-                                        <p>
-                                            Davao was peaceful and increasingly progressive in the postwar period, including the 1950s and the mid-1960s. Ethnic tensions 
-                                            were minimal, and there was essentially no presence of secessionists groups in Mindanao.
-                                        </p>
-
-                                        <p>
-                                            In 1967, the Province of Davao was divided into three provinces: Davao del Norte, Davao Oriental and Davao del Sur. 
-                                            The city of Davao became part of Davao del Sur no longer the provincial capital, it became a commercial center of 
-                                            southern Mindanao. This period also saw the first ever election of an indigenous person to the office of Mayor of 
-                                            Davao City, when Elias Lopez, a full-blooded Bagobo, won the mayoral elections of 1967.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Social unrest, martial law, and the 1980s</h6>
-
-                                        <p>
-                                            Things began to take a turn for the worse late into Ferdinand Marcos' first presidential term, when news about the 
-                                            Jabidah massacre ignited a furor in the Moro community, and ethnic tensions encouraged with the formation of 
-                                            secessionist movements. An economic crisis in late 1969 led to social unrest, and violent crackdowns on protests 
-                                            led to the radicalization of many students throughout the country. With no way to express their grievances about 
-                                            government abuses after the declaration of Martial law in 1972, many of them joined the New People's Army (NPA),
-                                             bringing the Communist rebellion in the Philippines to Davao and the rest of Mindanao for the first time.
-                                        </p>
-
-                                        <p>
-                                            In the midst of this era, Davao became the regional capital of southern Mindanao; with the reorganization, it became 
-                                            the regional capital of the Davao Region (Region XI) and highly urbanized city in the province of Davao del Sur.
-                                        </p>
-
-                                        <p>
-                                            Meantime, violence in the city became severe as Mindanao became one of the hotbeds of the NPA insurgency. The NPA, 
-                                            too, had become responsible for numerous abuses.[47] In 1985, locals formed the vigilante group "Alsa Masa" 
-                                            (People's Rise) to counter them.
-                                        </p>
-
-                                        <p>
-                                            Most Davao residents, however, remained staunchly against violence. This included the Roman Catholic Archbishop 
-                                            of Davao Antonio L. Mabutas, who was among the first religious leaders to peacefully speak out against the Human 
-                                            rights abuses of the Marcos dictatorship.[50] However, these peaceful citizens lacked the political clout to 
-                                            influence the situation much before 1983.
-                                        </p>
-
-                                        <p>
-                                            This only changed after the economic crisis of 1983 and the assassination of Ninoy Aquino later that year, 
-                                            and the murder of prominent Davao City journalist Alex Orcullo at a checkpoint in Barangay Tigatto, Davao City on 
-                                            October 19, 1984. These seminal events prompted prominent city figures like Soledad Duterte to organize a protest 
-                                            group called the "Yellow Friday Movement", which slowly gained support until 1986, when Marcos was finally ousted 
-                                            and forced into exile.
-                                        </p>
-
-                                        <p>
-                                            Because the local leaders of the time were closely associated with Marcos, they were removed by the 1986 
-                                            revolutionary government which took power after Marcos's ouster. President Corazon Aquino then appointed 
-                                            Soledad Duterte's son, Rodrigo Duterte, as temporary Vice Mayor of Davao. Rodrigo Duterte later ran for 
-                                            Mayor of Davao City and won, taking the top city office from 1988 to 1998, from 2001 to 2010, and yet again from 2013 to 2016, 
-                                            after which he became President of the Philippines.
-                                        </p>
-
-                                        <br>
+                                            <div id="courses" class="col-12 col-md-7 align-items-center justify-content-center">
+                                                <div class="container text-center align-items-center py-5">
+                                                    <div class="row justify-content-center">
+                                                        <h2 class="fw-bold">Thank you for Joining the <i>Adven<span style="color: var(--color-adventour)">tour</span></i> family</h2>
+                                                        <p class="lead text-muted mb-5">Let us make Davao City great, starting from you</p>
+                                                    </div>
+                                                </div>
+                                            </div>
 
 
-                                        <span class="fw-bold"> #Yesterdayishistory<br>#Tommorowisamystery<br>#Charot101</span>
+                                        </div>
+
+                                            
                                     </div>
-        
+                              
                                 </div>
 
-                                <div class="feed">
-                                    
-                                    <div class="head">
-                                        <div class="user">
-                                            <div class="profile-photo">
-                                                <img src="./images/Logo1-122722.png">
-                                            </div>
-                                            <div class="user-info">
-                                                <h3> Davao City's Geography</h3>
-                                                <h5>Adventour</h5>
-                                                <small>Davao City, December 26, 2022</small>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="main-photo">
-
-                                        <div class="container" id="main-photo">
-                                            <img src="./images/mtapo1.jpg" alt="Mt. Apo">
-                                        </div>
-                                    </div>
-        
-                                    <div class="action-button">
-                                        
-                                        <div class="interaction-button">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                                                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
-                                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                                                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                        <div class="bookmark">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="caption">
-                                        <p class="text-dark"><b style="color: var(--color-adventour);">Davao City</b>  is approximately 946 kilometres (588 mi) southeast of Manila over land, 
-                                            and 971 kilometres (524 nmi) by sea. The city is located in southeastern Mindanao, on the northwestern shore of Davao Gulf, opposite Samal Island.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Topography</h6>
-
-                                        <p>
-                                            Davao City's land, totaling about 2,443.61 square kilometres (943.48 sq mi), is hilly in the west (the Marilog district) and slopes down to the 
-                                            southeastern shore. Mount Apo, the highest peak in the Philippines, is located at the city's southwestern tip. Mount Apo National Park 
-                                            (the mountain and its surrounding vicinity), was inaugurated by President Manuel L. Quezon (in Proclamation 59 of May 8, 1936) to protect the flora 
-                                            and fauna of the surrounding mountain range.
-                                        </p>
-
-                                        <p>
-                                            The Davao River is the city's primary drainage channel. Draining an area of over 1,700 km2 (660 sq mi), the 160-kilometre (99 mi) river begins in 
-                                            the town of San Fernando, Bukidnon. The mouth of the river is located at Barangay Bucana at Talomo District.
-                                        </p>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Climate</h6>
-
-                                        <p>
-                                            Davao has a tropical rainforest climate, with little seasonal variation in temperature. The areological mechanism
-                                             of the Intertropical Convergence Zone occurs more often than that of the trade winds and because it experiences rare cyclones the climate is
-                                              not purely equatorial but subequatorial. Average monthly temperatures are always above 26 °C (78.8 °F), and average monthly rainfall is above 
-                                              77 millimetres (3.03 in). This gives the city a tropical climate, without a true dry season; while there is significant rainfall in winter, 
-                                              the largest rainfall occurs during the summer months.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Flora and fauna</h6>
-
-                                        <p>
-                                            Mount Apo is home to many bird species, 111 of which are endemic to the area. It is also home to one of the world's largest eagles, 
-                                            the critically endangered Philippine eagle, the country's national bird. The Philippine Eagle Foundation is based near the city. 
-                                            Plant species include the orchid waling-waling, also known as the "Queen of Philippine Flowers" as well as one of the country's 
-                                            national flowers, which are also endemic to the area. Fruits such as mangosteen (known as the "queen of fruits") and durian 
-                                            (known as the "king of fruits"), grow abundantly on Mount Apo.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Geology</h6>
-
-                                        <p>
-                                            Despite Davao City's location in the Asian portion of the Pacific Ring of Fire, the city has suffered few earthquakes and most have been minor. 
-                                            Mount Apo, 40 kilometres (25 mi) southwest from the city proper, is a dormant volcano.
-                                        </p>
-
-                                        <br>
-
-                                        <span class="fw-bold"> #LoremLorembaby<br>#Ambotsaimo</span>
-                                    </div>
-        
-                                </div>
-
-                                <div class="feed">
-                                    
-                                    <div class="head">
-                                        <div class="user">
-                                            <div class="profile-photo">
-                                                <img src="./images/Logo1-122722.png">
-                                            </div>
-                                            <div class="user-info">
-                                                <h3> Davao City Demographics</h3>
-                                                <h5>Adventour</h5>
-                                                <small>Davao City, December 26, 2022</small>
-                                            </div>
-                                        </div>
-                                    </div>
-        
-                                    <div class="main-photo">
-
-                                        <div class="container" id="main-photo">
-                                            <img src="./images/demographics1.jpg" alt="Davao City Demographics">
-                                        </div>
-                                    </div>
-        
-                                    <div class="action-button">
-                                        
-                                        <div class="interaction-button">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
-                                                <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
-                                                    <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chat-text" viewBox="0 0 16 16">
-                                                    <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z"/>
-                                                    <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z"/>
-                                                </svg>
-                                            </span>
-
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
-                                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                        <div class="bookmark">
-                                            <span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16">
-                                                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-                                                </svg>
-                                            </span>
-                                        </div>
-        
-                                    </div>
-        
-                                    <div class="caption">
-                                        <p class="text-dark"><b style="color: var(--color-adventour);">As of 2020 census</b>, the city has a total population of 1,776,949 people.[10] Metro Davao, 
-                                            with the city as its center, had about 2.77 million inhabitants in 2015, making it the third-most-populous metropolitan area in the Philippines and the most-populous 
-                                            city in Mindanao. In the 1995 census, the city's population reached 1,006,840 inhabitants, becoming the first city in the Philippines outside Metro Manila and the fourth 
-                                            nationwide to exceed one million inhabitants. The city's population increase during the 20th century was due to massive immigration waves coming from other parts of the 
-                                            nation and the trend continues to this day.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Ethnicities</h6>
-
-                                        <div class="caption-photo">
-                                            <img src="./images/ethnicity1.jpg" alt="Ethnicities">
-                                        </div>
-
-                                        <p>
-                                            Residents of Davao City and the whole corresponding Davao Region are colloquially known as Davaoeños. Nearly all local Davaoeños are Visayans (the majority are Cebuanos, 
-                                            with the rest being Hiligaynons), while others of different ethnicities especially the indigenous ones collectively categorized as the Lumads make up the remainder of 
-                                            the local population.
-                                        </p>
-
-                                        <p>
-                                            Other ethnicities are mostly Tagalogs and Ilokanos, descendants of settlers from Ilocos Region, Cordillera Administrative Region, Cagayan Valley, Central Luzon, 
-                                            Metro Manila, and Calabarzon. The Moro groups of the city are the Maguindanaons, Maranaos, Iranuns, Tausugs and the Sama-Bajaus.
-                                        </p>
-
-                                        <p>
-                                            Non-Filipino Asians such as Indonesians, Malaysians, Chinese Filipinos, Koreans, Japanese have settled and made small communities in Davao City. 
-                                            Non-Asian foreigners such as the Americans and Europeans are also present in small numbers in the city.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">languages</h6>
-
-
-                                        <p>
-                                            Cebuano is the most widely used language in the city and its satellite cities and towns, while Filipino comes close as second spoken, although most locals have 
-                                            shifted to the latter language in recent times. English is the medium of instruction in schools and is widely understood by residents, who often use it in varying 
-                                            professional fields. Aside from Cebuano, Chavacano and Hiligaynon are widely used in addition to languages indigenous to the city, such as Giangan, Kalagan, 
-                                            Tagabawa, Matigsalug, Ata Manobo, and Obo. Other languages spoken in the city include Maguindanao, Maranao, Sama-Bajaw, Iranun, Tausug, and Ilocano.
-                                        </p>
-
-                                        <p>
-                                            A linguistic phenomenon has developed in the city whereby locals significantly mix Filipino terms and grammar into their Cebuano speech because the older 
-                                            generations speak Filipino to their children at home, and Cebuano is spoken in other everyday settings, making Filipino a secondary lingua franca.
-                                        </p>
-
-                                        <br>
-
-                                        <h6 style="color: var(--color-adventour); font-weight: bold;">Religion</h6>
-
-                                        <div class="caption-photo">
-                                            <img src="./images/sanpedro1.jpg" alt="Ethnicities">
-                                        </div>
-
-                                        <p>
-                                            The majority of Davao City's inhabitants are Roman Catholics forming 80% of the population. Other groups, such as the Iglesia ni Cristo, Miracle Crusade, 
-                                            Pentecostal Missionary Church of Christ (4th Watch) and followers of the Kingdom of Jesus Christ, form eighteen percent of the city's religious background.
-                                             Seventh-day Adventists, the United Church of Christ in the Philippines, Philippine Independent Church and Baptists are the other Christian denominations. 
-                                        </p>
-
-                                        <p>
-                                            The remaining 2% belong to non-Christian faiths, mainly Islam. Some of the other faiths are Sikhism, Hinduism, Buddhism, animism, Judaism and the non-religious.
-                                        </p>
-
-                                        <p>
-                                            The Restorationist Church Kingdom of Jesus Christ had its origins in the city. Apollo Quiboloy, who claims to be the "Appointed Son of God", is the leader of the movement.
-                                        </p>
-
-                                        <p>
-                                            The Roman Catholic Archdiocese of Davao is the main metropolitan see of the Roman Catholic Church in southern Mindanao. It comprises the city of Davao, 
-                                            the Island Garden City of Samal and the municipality of Talaingod in Davao del Norte province; under its jurisdiction are the three suffragan dioceses of Digos, 
-                                            Tagum and Mati (the capital cities of the three Davao provinces). Archbishop Romulo Valles of the Archdiocese of Davao, appointed on February 11, 2012, by Pope Benedict XVI,
-                                             took office on May 22, 2012, at San Pedro Cathedral. Saint Peter, locally known as San Pedro, is the patron saint of the city.
-                                        </p>
-
-                                        <span class="fw-bold"> #LoremLorembaby<br>#Ambotsaimo</span>
-                                    </div>
-        
-                                </div>
-        
+                                
                             </div>
     
-                            <div class="bottom-filler mb-5"></div>
+                            <div class="bottom-filler mb-1"></div>
     
     
                         </div>
@@ -925,63 +638,6 @@
                     </div>
                 <!--==================== End of Middle Section =================-->
 
-
-                <!--==================== Right Section =================-->
-                    <div class="right col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
-                        
-                        <div class="calculator-container">
-                            <div class="calculator">
-                                <div class="theme-toggler active">
-                                    <i class="toggler-icon"></i>
-                                </div>
-                    
-                                <div class="display-screen">
-                                    <div id="display"></div>
-                                </div>
-                    
-                                <div class="buttons">
-                                    <table>
-                                        <tr>
-                                            <td><button class="btn-operator" id="clear">C</button></td>
-                                            <td><button class="btn-operator" id="/">&divide</button></td>
-                                            <td><button class="btn-operator" id="*">&times</button></td>
-                                            <td><button class="btn-operator" id="backspace"><</button></td>
-                                        </tr>
-                    
-                                        <tr>
-                                            <td><button class="btn-number" id="7">7</button></td>
-                                            <td><button class="btn-number" id="8">8</button></td>
-                                            <td><button class="btn-number" id="9">9</button></td>
-                                            <td><button class="btn-operator" id="-">-</button></td>
-                                        </tr>
-                    
-                                        <tr>
-                                            <td><button class="btn-number" id="4">4</button></td>
-                                            <td><button class="btn-number" id="5">5</button></td>
-                                            <td><button class="btn-number" id="6">6</button></td>
-                                            <td><button class="btn-operator" id="+">+</button></td>
-                                        </tr>
-                    
-                                        <tr>
-                                            <td><button class="btn-number" id="1">1</button></td>
-                                            <td><button class="btn-number" id="2">2</button></td>
-                                            <td><button class="btn-number" id="3">3</button></td>
-                                            <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
-                                        </tr>
-                    
-                                        <tr>
-                                            <td><button class="btn-operator" id="(">(</button></td>
-                                            <td><button class="btn-operator" id="0">0</button></td>
-                                            <td><button class="btn-operator" id=")">)</button></td>
-                                        </tr>
-                    
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                <!--==================== End of Right Section =================-->
 
             </div>
 

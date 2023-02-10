@@ -3,6 +3,9 @@
 *::after {
     margin: 0;
     padding: 0;
+    element.style {
+    }
+    .text-primary
     outline: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -38,6 +41,8 @@ body {
 
     --sticky-top-left: 1rem;
     --sticky-top-right: -18rem;
+
+    
 }
 
 /*General*/
@@ -71,10 +76,25 @@ img {
     color: var(--color-adventour)
 }
 
+.btn-carousel {
+    display: inline-block;
+    padding: var(--btn-padding);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 300ms ease;
+    font-size: 0.9rem;
+    border: 2px solid white;
+    color: white;
+}
+
 .btn:hover {
     background: var(--color-adventour);
     color: var(--color-white);
+    border: 2px solid var(--color-adventour);
 }
+
+
 
 .btn-primary {
     background: var(--color-white);
@@ -330,6 +350,7 @@ main .container-fluid .left {
     height: max-content;
     position: sticky;
     top: var(--sticky-top-left);
+    z-index: 99999;
 }
 
 main .container-fluid .left .sidenav a{
@@ -705,6 +726,7 @@ button#equal {
         border-radius: 50%;
         background-color: #2e3047;
         cursor: pointer;
+        z-index: 9999 !important;
     }
     
     .customize-theme .card { 
@@ -716,6 +738,8 @@ button#equal {
     .sidenav {
         max-width: 15%;
         min-width: 15%;
+        z-index: 999999;
+        position: fixed;
     }
 
     .customize-theme .card .theme-title::before {
@@ -888,5 +912,680 @@ button#equal {
     top: 5rem;
     left: -0.1rem;
 }
+
+/*====================================== New CSS ===============================*/
+
+/* accordion */
+
+.accordion:active {
+    background: var(--color-white);
+}
+
+.accordion-button:focus {
+    background: var(--color-white);
+    box-shadow: 0 1px 1px var(--color-adventour);
+}
+
+.accordion-button:active {
+    background-color: rgb(248, 247, 247);
+    color: var(--color-adventour);
+}
+
+.accordion-title {
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(39, 39, 39);
+}
+
+.accordion-item {
+    border:none;
+}
+
+/* end of accordion */
+
+/* About CSS */
+
+.material-icons-outlined {
+    vertical-align: middle;
+    line-height: 1px;
+}
+
+.navbar-nav a:hover {
+    color: rgb(4, 108, 255);
+}
+
+.navbar-brand > .material-icons-outlined {
+    font-size:40px;
+}
+
+.nav-item > button {
+    color:#807d7d;
+    font-size: 100%;
+}
+
+.nav-item > button:hover {
+    background:  rgb(6, 110, 255) !important;
+    color: white;
+}
+
+.about > .material-icons-outlined {
+    font-size: 50px;
+}
+
+.card > img {
+    height: 50%;
+    width:50%;
+}
+
+.course-image {
+   height:100%;
+   width:auto;
+   padding: 1em 0;
+   background:linear-gradient(rgba(2, 9, 31, 0.438),rgba(0, 9, 39, 0.527)), url(savealife.jpg);
+   color: #ffffff;
+   background-position:center !important;
+   background-size:cover !important;
+}
+
+.map-image {
+    height:100%;
+   width:auto;
+   padding: 1em 0;
+   background:linear-gradient(rgba(2, 9, 31, 0.438),rgba(0, 9, 39, 0.527)), url(image2.jpg);
+   color: #ffffff;
+   background-position:center !important;
+   background-size:cover !important;
+}
+
+.testimonial-image2 > img {
+    height: 60%;
+    width: 60%;
+    background-position:center !important;
+   background-size:cover !important;
+}
+
+.testimonial-image3 > img {
+    height: 100%;
+    width: 100%;
+    background-position:center !important;
+   background-size:cover !important;
+}
+
+#loginbtn {
+    text-decoration: none;
+    justify-content: flex-start;
+}
+
+
+/*Slider*/
+
+.carousel-item {
+    z-index: none;
+    height: 330px;
+}
+.carousel-content{
+    left:0;
+    right:0;
+    margin-top: 130px;
+    height: auto;
+}
+
+@media (max-width: 430px) {
+    .carousel-content{
+        right:0;
+        margin-top: 110px;
+        height: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .carousel-content{
+        right:0;
+        margin-top: 100px;
+        height: auto;
+    }
+
+}
+
+#carcontent2 {
+    margin-left: 5%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+}
+
+#carcontent3 {
+    margin-left: 13%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+}
+
+#carcontent4 {
+    margin-left: 5%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+#carcontent5 {
+    margin-left: 5%;
+    margin-right: 8%;
+    margin-bottom: 12%;
+}
+
+#carcontent6 {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-bottom: 9%;
+}
+
+#carcontent7 {
+    margin-left: 5%;
+    margin-right: 8%;
+    margin-bottom: 7%;
+}
+
+#carcontent8 {
+    margin-left: 13%;
+    margin-right: 5%;
+    margin-bottom: 7%;
+}
+
+.carousel-control-prev {
+    padding: 0;
+}
+
+.bg-cover {
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.carousel-control-prev, 
+.carousel-control-next {
+    top:50% !important;
+    width: 40px !important;
+    height: 40px !important;
+    display:grid !important;
+    position:absolute !important;
+    place-items: center !important;
+    background-color:rgba(0, 10, 24, 0.363) !important;
+    border-radius: 100px;
+}
+
+.carousel-control-prev:hover, 
+.carousel-control-next:hover {
+    background-color: var(--color-adventour) !important;
+    opacity: .6;
+}
+
+.carousel {
+    box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.308);
+    border-radius: var(--card-border-radius);
+    z-index: 1;
+    overflow: hidden;
+}
+
+.carouse-container {
+    position: fixed;
+}
+
+/*Infobox*/
+
+#sectioninfo {
+    padding-top: .8rem;
+    padding-bottom: 80px;
+}
+
+.info-box {
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 430px) {
+
+    #sectioninfo {
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+    }
+
+    .info-box-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .info-box-image img {
+        width:80%;
+        height:80%;
+    }
+}
+
+.info-box-image {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.info-box-image img {
+    width:100%;
+    height:100%;
+}
+
+/*Milestone*/
+
+.bg-cover3 {
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#milestone {
+    background:linear-gradient(rgba(1, 19, 77, 0.747),rgba(1, 18, 73, 0.863)), url(speeding1.jpg);
+    padding:70px;
+}
+
+#milestone .display-2 {
+    font-weight: 530;
+}
+
+#milestone .display-2, 
+#milestone p {
+    color:beige;
+}
+
+/*Teams*/
+
+.team-member .img-wrapper {
+    position:relative;
+    overflow: hidden;
+}
+
+.social-links a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(240, 248, 255, 0.4);
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:white;
+    border-radius: 60%;
+    transition: all 0.4s ease;
+}
+
+.social-links a:hover {
+    background-color: antiquewhite;
+    color: var(--color-adventour);
+}
+.team-member .overlay {
+    position: absolute;
+    top:-30;
+    left:0;
+    width:100%;
+    height:100%;
+    background: linear-gradient(to right, white,rgba(255, 255, 255, 0.1),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(6, 6, 80, 0.2),rgba(255, 255, 255, 0.1),white);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.team-member:hover .overlay {
+    opacity: 1;
+    top:0; 
+}
+
+.team-member:hover .social-links {
+    opacity: 1;
+    top: 50%; 
+}
+
+.team-member .social-links {
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.team-member h5{
+    margin-top: 24px;
+}
+
+/*Footer*/
+
+.section-subscribe {
+    padding: 5em 0;
+}
+ 
+.card-body .form-control {
+    outline: none;
+    background-color: transparent;
+    border-width: 0 0 2px 0;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(134, 131, 131);
+    color:rgb(153, 149, 149);
+}
+
+.form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    background-color: transparent !important;
+}
+
+.form-control:focus .form-control:active {
+    outline: none;
+    background-color: transparent !important;
+}
+
+
+.form-floating .form-control {
+    outline:none;
+    background-color:transparent;
+    color:#fff;
+    border-width: 0 0 2px 0;
+    border-radius: 0px;
+    border-bottom: 2px solid rgb(134, 131, 131);
+}
+
+.form-floating .form-control:focus {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    background-color: transparent !important;
+}
+
+.form-floating .form-control:active {
+    outline: none;
+    background-color: transparent !important;
+}
+
+/*modal*/
+
+.modal-forget {
+    color:#fff;
+}
+
+.modal-forget a {
+    text-decoration: none;
+    color:#fff;
+}
+
+.myform {
+    max-width: 100%;
+}
+
+#modal-login {
+    padding:0px;
+}
+
+#modalcontentlogin {
+    width: 50%;
+    margin: 0px auto;
+}
+
+.myform {
+    padding:2em;
+    max-width: 100%;
+    color: white;
+}
+
+/*sign up*/
+
+.signup {
+    padding:px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    max-width: 100%;
+    color: rgb(8, 8, 8);
+}
+
+.btn {
+    -webkit-box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+    box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
+}
+
+.btn.btn-primary {
+    color: var();
+    border-width:2px;
+    background: var(--color-white);
+    border-color: var(--color-adventour);
+    padding:3px;
+}
+
+.site-footer {
+    padding: 1em 0;
+    background:linear-gradient(rgba(2, 9, 31, 0.945),rgb(0, 9, 39)), url(savealife.jpg);
+    color: #b2d0f7;
+    background-position:center !important;
+    background-size:cover !important;
+}
+
+#footerlink a {
+    color:#b2d0f7;
+}
+
+#footerlink a:hover {
+    color:rgb(2, 110, 255);
+}
+
+.social-links-footer a {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(142, 202, 255, 0.397);
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#b2d0f7;
+    border-radius: 60%;
+    transition: all 0.4s ease;
+}
+
+.social-links-footer a:hover {
+    background-color: var(--color-adventour);
+    color:rgb(255, 255, 255);
+}
+
+.footer-image {
+    align-items: center;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+
+.footer-image img {
+    width:80%;
+    height:80%;
+}
+
+/*Data circle*/
+
+
+
+/*Hovers*/
+
+a {
+    text-decoration: none;
+    color: var(--light)
+}
+
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: unset;
+}
+#section10 {
+    display: flex;
+    align-items: bottom;
+    height: 100vh;
+    padding: 6em 0;
+    margin-top: 10px;
+}
+
+
+.map-image iframe {
+    filter: invert(1) grayscale(100%);
+}
+
+.main-content {
+    position: relative; 
+    top:10%;
+    z-index: 22;
+    width: fit-content;
+    color: var(--light);
+}
+
+#card1 {
+    background-color: rgb(155, 154, 154);
+    border-radius: 10px;
+}
+
+/*road rules and safety*/
+
+.site-content-1 {
+    border-radius: 15px;
+    margin-right: 5px;
+}
+
+.site-content-2 {
+    border-radius: 15px;
+}
+
+.content1-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(roadrulesandsafety.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content2-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(etiquette.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content3-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(responsibledriver.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content4-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(savealife.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content5-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(caraccident.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content6-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(motogear.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.content7-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(image2.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+/*Testimonials*/
+
+#cartest {
+    height:100%;
+    background:#f7f7f7;
+    position:relative;
+}
+
+/*Forums*/
+
+.forum1-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(speeding1.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.forum2-image-header {
+    height:400px;
+    width:100%;
+    background-image: url(popo.jpg);
+    background-position: center !important;
+    background-size:cover !important;
+}
+
+.dev-image-container .carousel-item img {
+    object-position: 50%;
+    object-fit: cover;
+}
+
+/* End of About CSS */
+
+.dev-bottom-image {
+    width: 100%;
+    height: 100%;
+}
+
+.dev-bottom-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: 100%;
+    background: #00000042;
+}
+
+.dev-bottom-image img:before {
+    background: rgba(0, 0, 0, 0.842);
+    width: 100%;
+    height: 100%;
+}
+
+.dev-bottom-image .img-wrapper {
+    position:relative;
+    overflow: hidden;
+    border-radius: var(--card-border-radius);
+}
+
+
+.dev-bottom-image .overlay {
+    position: absolute;
+    left:0;
+    width:100%;
+    height:100%;
+    background: url(./images/devimgbottom2.png);
+    background-position: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.dev-bottom-image:hover .overlay {
+    opacity: 1;
+    top:0; 
+}
+  
+
+
+
+/*======================================End of New CSS ===============================*/
+
 
 
