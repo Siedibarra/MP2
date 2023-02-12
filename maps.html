@@ -144,8 +144,9 @@
                                         </span>
                                             <h3>Newsfeed</h3>
                                     </a>
-                
-                                    <a class="menu-item active" href="maps.html">
+
+                                    <a class="menu-item active" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+
                                         <span>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
                                                 <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016zm6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
@@ -153,7 +154,26 @@
                                             </svg>
                                         </span>
                                             <h3>Maps</h3>
+
                                     </a>
+
+                                            <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                            <div class="offcanvas-header">
+                                                <h2 class="offcanvas-title" id="offcanvasRightLabel" style="color: var(--color-adventour); font-weight: bold;">Maps</h2>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                                <div class="offcanvas-body">
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-6">
+                                                            <a href="home.html" class="btn">Travel Maps</a>
+                                                        </div>
+
+                                                        <div class="col-12 col-md-6">
+                                                            <a href="about.html" class="btn">Calamity Maps </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                 
                                     <a class="menu-item">
                                         <span>
@@ -392,11 +412,11 @@
                                             <div class="accordion" id="accordionExample">
                                                 <div class="accordion-item accordion-borderless">
                                                     <h2 class="accordion-header" id="headingTwo">
-                                                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
+                                                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone" aria-expanded="false" aria-controls="collapseone">
                                                         <p class="accordion-title">River System: Lipadas River</p>
                                                       </button>
                                                     </h2>
-                                                    <div id="collapseone" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div id="collapseone" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                                       <div class="accordion-body">
                                                                                                                
                                                         <div class="row">
@@ -1219,55 +1239,300 @@
                     <!--==================== Right Section =================-->
                         <div class="right col-12 col-md-3 col-lg-2 col-xl-2 col-xxl-2">
                             
-                            <div class="calculator-container">
-                                <div class="calculator">
-                                    <div class="theme-toggler active">
-                                        <i class="toggler-icon"></i>
-                                    </div>
-                        
-                                    <div class="display-screen">
-                                        <div id="display"></div>
-                                    </div>
-                        
-                                    <div class="buttons">
-                                        <table>
-                                            <tr>
-                                                <td><button class="btn-operator" id="clear">C</button></td>
-                                                <td><button class="btn-operator" id="/">&divide</button></td>
-                                                <td><button class="btn-operator" id="*">&times</button></td>
-                                                <td><button class="btn-operator" id="backspace"><</button></td>
-                                            </tr>
-                        
-                                            <tr>
-                                                <td><button class="btn-number" id="7">7</button></td>
-                                                <td><button class="btn-number" id="8">8</button></td>
-                                                <td><button class="btn-number" id="9">9</button></td>
-                                                <td><button class="btn-operator" id="-">-</button></td>
-                                            </tr>
-                        
-                                            <tr>
-                                                <td><button class="btn-number" id="4">4</button></td>
-                                                <td><button class="btn-number" id="5">5</button></td>
-                                                <td><button class="btn-number" id="6">6</button></td>
-                                                <td><button class="btn-operator" id="+">+</button></td>
-                                            </tr>
-                        
-                                            <tr>
-                                                <td><button class="btn-number" id="1">1</button></td>
-                                                <td><button class="btn-number" id="2">2</button></td>
-                                                <td><button class="btn-number" id="3">3</button></td>
-                                                <td rowspan="2"><button class="btn-equal" id="equal">=</button></td>
-                                            </tr>
-                        
-                                            <tr>
-                                                <td><button class="btn-operator" id="(">(</button></td>
-                                                <td><button class="btn-operator" id="0">0</button></td>
-                                                <td><button class="btn-operator" id=")">)</button></td>
-                                            </tr>
-                        
-                                        </table>
-                                    </div>
+                            
+
+                            <div class="route-container card">
+
+                                <h5 class="mx-3 mt-2" style="color: var(--color-adventour); font-weight: bold;">Davao City Jeepney Routes</h5>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseone-side" aria-expanded="false" aria-controls="collapseone">
+                                            <p class="accordion-title">Bago Aplaya Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseone-side" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- Bago Aplaya</li>
+                                                <li>- Central Park, Bangkal</li>
+                                                <li>- Tahimik Avenue</li>
+                                                <li>- Matina Crossing</li>
+                                                <li>- ABS-CBN Junction</li>
+                                                <li>- Ecoland Terminal Crossing</li>
+                                                <li>- Almendras Gym</li>
+                                                <li>- Roxas Avenue</li>
+                                                <li>- Tulip Drive</li>
+                                                <li>- Sabungan Gallera, Matina</li>
+                                                <li>- Matina Crossing</li>
+                                                <li>- Tahimik Avenue</li>
+                                                <li>- Central Park, Bangkal</li>
+                                                <li>- Ulas </li>
+                                                <li>- Puan Crossing</li>
+                                                <li>- Bago Crossing</li>
+
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
                                 </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">Bangkal Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTwo-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- Bangkal</li>
+                                                <li>- McArthur Hi-way, Balusong</li>
+                                                <li>- GSIS</li>
+                                                <li>- Davao Executives Homes</li>
+                                                <li>- SM City Davao</li>
+                                                <li>- Agro College</li>
+                                                <li>- Almendras Gym</li>
+                                                <li>- BPI Claveria</li>
+                                                <li>- Roxas</li>
+                                                <li>- Guerrero cor., Magsaysay Ave.</li>
+                                                <li>- F. Bangoy cor., Magsaysay Ave.</li>
+                                                <li>- Ramon Magsaysay Park</li>
+                                                <li>- PLDT Ponciano</li>
+                                                <li>- Fabie Hospital (Rizal St.)</li>
+                                                <li>- Sandawa Crossing</li>
+                                                <li>- Ma-a Crossing</li>
+                                                <li>- ABS-CBN (Bantay Bata 163)</li>
+                                                <li>- Matina Crossing</li>
+                                                <li>- DENR</li>
+                                                <li>- Davao Adventist Hospital</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">BO. Obrero Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapsethree-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- New Burgos St.</li>
+                                                <li>- Victoria Plaza Car Park</li>
+                                                <li>- Mercury Drug (Lacson)</li>
+                                                <li>- Gaisano Mall of Davao (Front)</li>
+                                                <li>- BDO Davao (Bangoy)</li>
+                                                <li>- Ateneo de Davao University (Jacinto)</li>
+                                                <li>- 7-Eleven (Blvd cor E. Jacinto St.)</li>
+                                                <li>- Moonlight Pharmacy</li>
+                                                <li>- San Pedro Church</li>
+                                                <li>- Mercury Drug Claveria</li>
+                                                <li>- Ateneo de Davao University (Claveria)</li>
+                                                <li>- Gaisano Mall of Davao (Front)</li>
+                                                <li>- Davao Street Food Park</li>
+                                                <li>- Sacred Heart of Jesus Parish</li>
+                                                <li>- Messy Burger N. Torres</li>
+                                                <li>- New Burgos St.</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>  
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">Buhagin Via Dacudao Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapsefour-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            
+                                            <ul>
+                                                <li>- Buhangin District Hall</li>
+                                                <li>- Orange Grove Hotel</li>
+                                                <li>- Watusi Street</li>
+                                                <li>- Dacudao Fly Over (TOYOBAC)</li>
+                                                <li>- Vinzon Corner, Cabaguio Ave. </li>
+                                                <li>- Leon Garcia St. (Sunrise)</li>
+                                                <li>- Ramon Magsaysay Park</li>
+                                                <li>- Bangoy Cor. Sta. Ana Ave.</li>
+                                                <li>- Agdao Flyover</li>
+                                                <li>- Dacucao Ave. Cor. Ruby St. (RGA VIII)</li>
+                                                <li>- Dacudao Fly Over</li>
+                                                <li>- Watusi Street, Buhagin</li>
+                                                <li>- Orange Groove Hotel</li>
+                                                <li>- Buhangin District Hall</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">Buhangin via JP Laurel Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapsefive-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- Orange Grove Hotel</li>
+                                                <li>- McDonald's Davao (Buhangin)</li>
+                                                <li>- Abreeza Mall</li>
+                                                <li>- NCCC Mall (Victoria Plaza)</li>
+                                                <li>- Gaisano Mall of Davao (Front)</li>
+                                                <li>- Bangko Sentral ng Pilipinas (Quirino)</li>
+                                                <li>- Davao Doctor's Hospital (Quirino)</li>
+                                                <li>- Bankerohan (Marfori St.)</li>
+                                                <li>- McDonald's Davao (Bankerohan)</li>
+                                                <li>- Grand Menseng Hotel (Magallanes)</li>
+                                                <li>- Sangguniang Panglungsod (Magallanes)</li>
+                                                <li>- San Pedro Church</li>
+                                                <li>- Mercury Drug (Claveria)</li>
+                                                <li>- Ateneo de Davao University (Claveria)</li>
+                                                <li>- Gaisano Mall of Davao (Front)</li>
+                                                <li>- NCCC Mall (Victoria Plaza)</li>
+                                                <li>- Abreeza Mall</li>
+                                                <li>- McDonald's Davao (Buhangin)</li>
+                                                <li>- Orange Grove Hotel</li>
+                                                <li>- Shell (NHA Buhangin)</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">Ecoland Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapsesix-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- SM City Davai (Ecoland)</li>
+                                                <li>- Civil Service Commission Regional Office</li>
+                                                <li>- John Paul II College</li>
+                                                <li>- Davao City Overland Transport Terminal (DCOTT)</li>
+                                                <li>- Tecarro College Foundation (Sandawa)</li>
+                                                <li>- Bankerohan Overpass</li>
+                                                <li>- Grand Menseng (Magallanes)</li>
+                                                <li>- Sanguniang Panglungsod </li>
+                                                <li>- Landbank Davao (Claveria)</li>
+                                                <li>- Ateneo de Davao University (Claveria)</li>
+                                                <li>- NCCC Uyanguren (Magsaysay)</li>
+                                                <li>- Ramon Magsaysay Park</li>
+                                                <li>- Boulevard (cor., Roxas Ave.)</li>
+                                                <li>- LTO (Fronting Felcris Centrale)</li>
+                                                <li>- Davao City Overland Transport Terminal (DCOTT)</li>
+                                                <li>- John Paul II College</li>
+                                                <li>- Civil Service Commission Regional Office XI</li>
+                                                <li>- Home Crest/Ecoland Suites</li>
+                                                <li>- SM City Davao (Ecoland)</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">El Rio Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseseven-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- El Rio Vista Village</li>
+                                                <li>- Kanto Bacaca Road (cor., Circumferential Rd.)</li>
+                                                <li>- Davao Chinese Cemetery</li>
+                                                <li>- Davao Medical School Foundation (DMSF)</li>
+                                                <li>- NCCC Mall (Victoria Plaza)</li>
+                                                <li>- Gaisano Mall Davao (Front)</li>
+                                                <li>- Davao Light and Power Company (Ponciano)</li>
+                                                <li>- Bankerohan (Marfori St.)</li>
+                                                <li>- Grand Menseng (Magallanes)</li>
+                                                <li>- San Pedro Church</li>
+                                                <li>- Mercury Drug (Claveria)</li>
+                                                <li>- Dover Bowling Lanes</li>
+                                                <li>- Ateneo de Davao University (Claveria)</li>
+                                                <li>- Gaisano Mall of Davao (Front)</li>
+                                                <li>- NCCC Mall (Victoria Plaza)</li>
+                                                <li>- Davao Medical School Foundation (DMSF)</li>
+                                                <li>- Davao Chinese Cemetery</li>
+                                                <li>- Kanto Bacaca Road (cor., Circumferential Rd.)</li>
+                                                <li>- El Rio Vista Village</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="accordion" id="accordionExample">   
+                                    <div class="accordion-item accordion-borderless">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseeight-side" aria-expanded="false" aria-controls="collapseTwo">
+                                            <p class="accordion-title">Ma-a Bankerohan Route</p>
+                                          </button>
+                                        </h2>
+                                        <div id="collapseeight-side" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                                                                                   
+                                            <ul>
+                                                <li>- Phoenix (Kanto Maa-Diversion)</li>
+                                                <li>- NCCc Supermarket (CENRO)</li>
+                                                <li>- Jollibee (Maa Branch)</li>
+                                                <li>- Luzviminda Village Subd.</li>
+                                                <li>- University of Mindanao (Maa Gate)</li>
+                                                <li>- S&R Membership Shopping</li>
+                                                <li>- University of Mindanao (Matina Campus)</li>
+                                                <li>- McDonald's Bankerohan</li>
+                                                <li>- University of Mindanao (Matina Campus)</li>
+                                                <li>- S&R Membership Shopping</li>
+                                                <li>- A Spatial Condominium</li>
+                                                <li>- Luzviminda Village Subd.</li>
+                                                <li>- Crossing Gem Village</li>
+                                                <li>- Maa Barangay Hall </li>
+                                                <li>- Woodridge Subd (Maa)</li>
+                                                <li>- Phoenix (Kanto Maa-Diversion)</li>
+                                            </ul>
+
+                                          </div>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                
+
+
                             </div>
 
                         </div>

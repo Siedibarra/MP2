@@ -76,6 +76,8 @@ img {
     color: var(--color-adventour)
 }
 
+
+
 .btn-carousel {
     display: inline-block;
     padding: var(--btn-padding);
@@ -149,7 +151,7 @@ main .container-fluid .left .sidenav {
 
 main .container-fluid .left .sidenav .profile .username {
     min-width: 90px;
-    max-width: 400px;
+    max-width: 200px;
 }
 
 /*+++++++++++++++++++ SIDE NAV COLLAPSIBLE ++++++++++++++++++++++++++++*/
@@ -941,6 +943,9 @@ button#equal {
     border:none;
 }
 
+.right .route-container .accordion .accordion-item .accordion-collapse .accordion-body li {
+    font-size: 12px;
+}
 /* end of accordion */
 
 /* About CSS */
@@ -1340,6 +1345,8 @@ button#equal {
     box-shadow: 0 3px 10px -2px rgb(0, 0, 0,0.2) !important;
 }
 
+
+
 .btn.btn-primary {
     color: var();
     border-width:2px;
@@ -1582,8 +1589,60 @@ a:focus {
     top:0; 
 }
   
+.game-container {
+    width: 100%;
+    height: 100%;
+}
 
 
+#game {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url(./images/city.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+#character {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 240px;
+    z-index: 9999;
+}
+
+.animate {
+    animation: jump 800ms;
+}
+
+@keyframes jump {
+    0%{top: 300px;}
+    20%{top: 100px;}
+    40%{top: 150px;}
+    60%{top: 200px;}
+    80%{top: 250px;}
+    100%{top: 300px;}
+}
+
+#block {
+    width: 160px;
+    height: 130px;
+    position: relative;
+    top: 150px;
+    left: 480px;
+    animation: block 3s infinite linear;
+}
+
+
+@keyframes block {
+    0%{left: 100%;}
+    100%{left: -40px;}
+
+}
 
 /*======================================End of New CSS ===============================*/
 
