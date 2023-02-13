@@ -583,7 +583,7 @@ main .container-fluid .middle {
 }
 
 main .container-fluid .right {
-    height: 100vh;
+    height: 570px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -1584,6 +1584,8 @@ a:focus {
     transition: all 2s ease-in-out;
 }
 
+/*---POPOY RUSH GAME----*/
+
 .dev-bottom-image:hover .overlay {
     opacity: 1;
     top:0; 
@@ -1643,6 +1645,16 @@ a:focus {
     100%{left: -40px;}
 
 }
+
+/*----- END OF POPOY RUSH GAME ------*/
+
+
+
+/*------ Rolling -------*/
+
+
+/*------ END of Rolling -------*/
+
 
 /*======================================End of New CSS ===============================*/
 
